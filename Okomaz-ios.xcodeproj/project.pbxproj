@@ -8,20 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		A0C2A88D1F3249DE0049D754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A88C1F3249DE0049D754 /* AppDelegate.swift */; };
-		A0C2A88F1F3249DE0049D754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A88E1F3249DE0049D754 /* ViewController.swift */; };
-		A0C2A8921F3249DE0049D754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8901F3249DE0049D754 /* Main.storyboard */; };
-		A0C2A8941F3249DE0049D754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8931F3249DE0049D754 /* Assets.xcassets */; };
+		A0C2A88F1F3249DE0049D754 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A88E1F3249DE0049D754 /* AuthenticationViewController.swift */; };
+		A0C2A8921F3249DE0049D754 /* AuthenticationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8901F3249DE0049D754 /* AuthenticationViewController.storyboard */; };
 		A0C2A8971F3249DE0049D754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8951F3249DE0049D754 /* LaunchScreen.storyboard */; };
+		A0C2A8A51F324B450049D754 /* MyAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8A41F324B450049D754 /* MyAccount.storyboard */; };
+		A0C2A8A71F324B5E0049D754 /* Services.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8A61F324B5E0049D754 /* Services.storyboard */; };
+		A0C2A8A91F324B6E0049D754 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8A81F324B6E0049D754 /* Settings.storyboard */; };
+		A0C2A8AB1F324B810049D754 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8AA1F324B810049D754 /* SignUp.storyboard */; };
+		A0C2A8AD1F324B930049D754 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8AC1F324B930049D754 /* Login.storyboard */; };
+		A0C2A8B11F3251890049D754 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A8B01F3251890049D754 /* LoginViewController.swift */; };
+		A0C2A8B71F3269320049D754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8B61F3269320049D754 /* Assets.xcassets */; };
+		A0C2A8B91F327CB10049D754 /* SignUpOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A8B81F327CB10049D754 /* SignUpOptionsViewController.swift */; };
+		A0C2A8BC1F3281C50049D754 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8BB1F3281C50049D754 /* MainViewController.storyboard */; };
+		A0C2A8BE1F3282C90049D754 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8BD1F3282C90049D754 /* Chat.storyboard */; };
+		A0C2A8C01F32860F0049D754 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A8BF1F32860F0049D754 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A0C2A8891F3249DE0049D754 /* Okomaz-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Okomaz-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2A88C1F3249DE0049D754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0C2A88E1F3249DE0049D754 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0C2A8911F3249DE0049D754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A0C2A8931F3249DE0049D754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0C2A88E1F3249DE0049D754 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationViewController.swift; path = "Okomaz-ios/AuthenticationViewController.swift"; sourceTree = "<group>"; };
+		A0C2A8911F3249DE0049D754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AuthenticationViewController.storyboard; sourceTree = "<group>"; };
 		A0C2A8961F3249DE0049D754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0C2A8981F3249DE0049D754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C2A8A41F324B450049D754 /* MyAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyAccount.storyboard; sourceTree = "<group>"; };
+		A0C2A8A61F324B5E0049D754 /* Services.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Services.storyboard; sourceTree = "<group>"; };
+		A0C2A8A81F324B6E0049D754 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		A0C2A8AA1F324B810049D754 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		A0C2A8AC1F324B930049D754 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A0C2A8B01F3251890049D754 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A0C2A8B61F3269320049D754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0C2A8B81F327CB10049D754 /* SignUpOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpOptionsViewController.swift; sourceTree = "<group>"; };
+		A0C2A8BB1F3281C50049D754 /* MainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		A0C2A8BD1F3282C90049D754 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		A0C2A8BF1F32860F0049D754 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,8 +58,17 @@
 		A0C2A8801F3249DE0049D754 = {
 			isa = PBXGroup;
 			children = (
-				A0C2A88B1F3249DE0049D754 /* Okomaz-ios */,
+				A0C2A8BA1F3281A00049D754 /* main */,
+				A0C2A88B1F3249DE0049D754 /* App.self */,
+				A0C2A8AE1F3250C00049D754 /* Authentication */,
+				A0C2A8A11F324A6C0049D754 /* Chat */,
+				A0C2A8AF1F3251340049D754 /* Launch */,
+				A0C2A89E1F324A230049D754 /* Login */,
+				A0C2A8A21F324A750049D754 /* MyAccount */,
 				A0C2A88A1F3249DE0049D754 /* Products */,
+				A0C2A89F1F324A490049D754 /* Services */,
+				A0C2A8A01F324A5E0049D754 /* Settings */,
+				A0C2A8A31F324A820049D754 /* SignUp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,17 +80,93 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A0C2A88B1F3249DE0049D754 /* Okomaz-ios */ = {
+		A0C2A88B1F3249DE0049D754 /* App.self */ = {
 			isa = PBXGroup;
 			children = (
 				A0C2A88C1F3249DE0049D754 /* AppDelegate.swift */,
-				A0C2A88E1F3249DE0049D754 /* ViewController.swift */,
-				A0C2A8901F3249DE0049D754 /* Main.storyboard */,
-				A0C2A8931F3249DE0049D754 /* Assets.xcassets */,
+				A0C2A8B61F3269320049D754 /* Assets.xcassets */,
 				A0C2A8951F3249DE0049D754 /* LaunchScreen.storyboard */,
 				A0C2A8981F3249DE0049D754 /* Info.plist */,
 			);
+			name = App.self;
 			path = "Okomaz-ios";
+			sourceTree = "<group>";
+		};
+		A0C2A89E1F324A230049D754 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2A8AC1F324B930049D754 /* Login.storyboard */,
+				A0C2A8B81F327CB10049D754 /* SignUpOptionsViewController.swift */,
+				A0C2A8B01F3251890049D754 /* LoginViewController.swift */,
+			);
+			name = Login;
+			path = "Okomaz-ios";
+			sourceTree = "<group>";
+		};
+		A0C2A89F1F324A490049D754 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2A8A61F324B5E0049D754 /* Services.storyboard */,
+			);
+			name = Services;
+			path = "Okomaz-ios";
+			sourceTree = "<group>";
+		};
+		A0C2A8A01F324A5E0049D754 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2A8A81F324B6E0049D754 /* Settings.storyboard */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		A0C2A8A11F324A6C0049D754 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2A8BD1F3282C90049D754 /* Chat.storyboard */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		A0C2A8A21F324A750049D754 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2A8A41F324B450049D754 /* MyAccount.storyboard */,
+			);
+			name = MyAccount;
+			sourceTree = "<group>";
+		};
+		A0C2A8A31F324A820049D754 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2A8AA1F324B810049D754 /* SignUp.storyboard */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		A0C2A8AE1F3250C00049D754 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2A88E1F3249DE0049D754 /* AuthenticationViewController.swift */,
+				A0C2A8901F3249DE0049D754 /* AuthenticationViewController.storyboard */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		A0C2A8AF1F3251340049D754 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
+		A0C2A8BA1F3281A00049D754 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2A8BB1F3281C50049D754 /* MainViewController.storyboard */,
+				A0C2A8BF1F32860F0049D754 /* MainViewController.swift */,
+			);
+			name = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +229,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C2A8AD1F324B930049D754 /* Login.storyboard in Resources */,
 				A0C2A8971F3249DE0049D754 /* LaunchScreen.storyboard in Resources */,
-				A0C2A8941F3249DE0049D754 /* Assets.xcassets in Resources */,
-				A0C2A8921F3249DE0049D754 /* Main.storyboard in Resources */,
+				A0C2A8A51F324B450049D754 /* MyAccount.storyboard in Resources */,
+				A0C2A8AB1F324B810049D754 /* SignUp.storyboard in Resources */,
+				A0C2A8A91F324B6E0049D754 /* Settings.storyboard in Resources */,
+				A0C2A8921F3249DE0049D754 /* AuthenticationViewController.storyboard in Resources */,
+				A0C2A8B71F3269320049D754 /* Assets.xcassets in Resources */,
+				A0C2A8BC1F3281C50049D754 /* MainViewController.storyboard in Resources */,
+				A0C2A8BE1F3282C90049D754 /* Chat.storyboard in Resources */,
+				A0C2A8A71F324B5E0049D754 /* Services.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,20 +249,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C2A88F1F3249DE0049D754 /* ViewController.swift in Sources */,
+				A0C2A8C01F32860F0049D754 /* MainViewController.swift in Sources */,
+				A0C2A8B11F3251890049D754 /* LoginViewController.swift in Sources */,
+				A0C2A88F1F3249DE0049D754 /* AuthenticationViewController.swift in Sources */,
 				A0C2A88D1F3249DE0049D754 /* AppDelegate.swift in Sources */,
+				A0C2A8B91F327CB10049D754 /* SignUpOptionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A0C2A8901F3249DE0049D754 /* Main.storyboard */ = {
+		A0C2A8901F3249DE0049D754 /* AuthenticationViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A0C2A8911F3249DE0049D754 /* Base */,
 			);
-			name = Main.storyboard;
+			name = AuthenticationViewController.storyboard;
+			path = "Okomaz-ios";
 			sourceTree = "<group>";
 		};
 		A0C2A8951F3249DE0049D754 /* LaunchScreen.storyboard */ = {
