@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="km2-Ho-pU5">
             <objects>
-                <viewController id="DiP-TA-jA7" sceneMemberID="viewController">
+                <viewController id="DiP-TA-jA7" customClass="SignUpViewController" customModule="Okomaz_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZTn-Qk-EsU"/>
                         <viewControllerLayoutGuide type="bottom" id="eR7-HW-MZI"/>

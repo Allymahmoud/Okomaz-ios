@@ -26,6 +26,16 @@ class SignUpOptionsViewController: UIViewController {
     }
     
 
+    @IBAction func registerAccountMain(_ sender: Any) {
+        self.performSegue(withIdentifier: "navToSignUp", sender: nil)
+    }
    
+    @IBAction func registerAccountMember(_ sender: Any) {
+        self.performSegue(withIdentifier: "navToSignUp", sender: nil)
+    }
+    
+    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+        <#code#>
+    }
 
 }

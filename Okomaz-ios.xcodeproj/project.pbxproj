@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A066586D1F38F0BC00B3AEB1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066586C1F38F0BC00B3AEB1 /* SignUpViewController.swift */; };
 		A0C2A88D1F3249DE0049D754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A88C1F3249DE0049D754 /* AppDelegate.swift */; };
 		A0C2A88F1F3249DE0049D754 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A88E1F3249DE0049D754 /* AuthenticationViewController.swift */; };
 		A0C2A8921F3249DE0049D754 /* AuthenticationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8901F3249DE0049D754 /* AuthenticationViewController.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A066586C1F38F0BC00B3AEB1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A0C2A8891F3249DE0049D754 /* Okomaz-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Okomaz-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2A88C1F3249DE0049D754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C2A88E1F3249DE0049D754 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationViewController.swift; path = "Okomaz-ios/AuthenticationViewController.swift"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				A0C2A8AA1F324B810049D754 /* SignUp.storyboard */,
+				A066586C1F38F0BC00B3AEB1 /* SignUpViewController.swift */,
 			);
 			name = SignUp;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A066586D1F38F0BC00B3AEB1 /* SignUpViewController.swift in Sources */,
 				A0C2A8C01F32860F0049D754 /* MainViewController.swift in Sources */,
 				A0C2A8B11F3251890049D754 /* LoginViewController.swift in Sources */,
 				A0C2A88F1F3249DE0049D754 /* AuthenticationViewController.swift in Sources */,
@@ -420,6 +424,7 @@
 				A0C2A89D1F3249DE0049D754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -201,6 +201,9 @@
                                 <state key="normal" title="REGISTER AS MAIN HOUSEHOLD CONTACT">
                                     <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerAccountMain:" destination="8Fk-e3-qGt" eventType="touchUpInside" id="Flg-Ui-Nmq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ur-i1-T7N">
                                 <rect key="frame" x="24" y="508" width="327" height="40"/>
@@ -212,6 +215,9 @@
                                 <state key="normal" title="REGISTER AS MEMBER HOUSEHOLD CONTACT">
                                     <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerAccountMember:" destination="8Fk-e3-qGt" eventType="touchUpInside" id="JeJ-9V-cRc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -229,7 +235,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="1cz-KU-bvU" kind="show" id="pjs-oO-LiP"/>
+                        <segue destination="1cz-KU-bvU" kind="show" identifier="navToSignUp" id="pjs-oO-LiP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULa-9l-kIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
