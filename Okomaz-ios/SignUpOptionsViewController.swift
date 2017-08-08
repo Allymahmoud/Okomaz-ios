@@ -9,7 +9,9 @@
 import UIKit
 
 class SignUpOptionsViewController: UIViewController {
-
+    var selectedAccountOption: String!
+        
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,15 +29,20 @@ class SignUpOptionsViewController: UIViewController {
     
 
     @IBAction func registerAccountMain(_ sender: Any) {
+        self.selectedAccountOption = "Main Household Contact"
         self.performSegue(withIdentifier: "navToSignUp", sender: nil)
     }
    
     @IBAction func registerAccountMember(_ sender: Any) {
+        self.selectedAccountOption = "Member Household Contact"
         self.performSegue(withIdentifier: "navToSignUp", sender: nil)
     }
     
-    override func performSegue(withIdentifier identifier: String, sender: Any?) {
-        <#code#>
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let signUpVC =  segue.destination as! SignUpViewController
+        print (selectedAccountOption)
+        signUpVC.selectedAccountOption = self.selectedAccountOption
     }
 
 }

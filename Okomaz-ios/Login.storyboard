@@ -161,7 +161,7 @@
                         <outlet property="emailField" destination="Hxe-ob-HCV" id="ElQ-wt-2Ck"/>
                         <outlet property="passwordField" destination="vZZ-5y-s1t" id="8rZ-5v-ql4"/>
                         <segue destination="8Fk-e3-qGt" kind="show" identifier="navToRegisterOptions" id="Oxg-ch-bR2"/>
-                        <segue destination="gKL-AT-4Gg" kind="show" id="w9a-hN-egr"/>
+                        <segue destination="gKL-AT-4Gg" kind="show" identifier="navToMain" id="w9a-hN-egr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqn-bD-1Tm" userLabel="First Responder" sceneMemberID="firstResponder"/>
