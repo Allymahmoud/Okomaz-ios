@@ -40,9 +40,12 @@ class SignUpOptionsViewController: UIViewController {
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         let signUpVC =  segue.destination as! SignUpViewController
         print (selectedAccountOption)
-        signUpVC.selectedAccountOption = self.selectedAccountOption
+        signUpVC.title = "Sign Up"
+        signUpVC.selectedOption = selectedAccountOption
+        
     }
 
 }
