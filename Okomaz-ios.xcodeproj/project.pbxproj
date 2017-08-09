@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A05760DD1F3BC0A100E89DCA /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05760DC1F3BC0A100E89DCA /* SignUpViewController.storyboard */; };
 		A05760E31F3BC39900E89DCA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05760E21F3BC39900E89DCA /* SignUpViewController.swift */; };
 		A0C2A88D1F3249DE0049D754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A88C1F3249DE0049D754 /* AppDelegate.swift */; };
 		A0C2A88F1F3249DE0049D754 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A88E1F3249DE0049D754 /* AuthenticationViewController.swift */; };
@@ -27,7 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A05760DC1F3BC0A100E89DCA /* SignUpViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
 		A05760E21F3BC39900E89DCA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A0C2A8891F3249DE0049D754 /* Okomaz-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Okomaz-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2A88C1F3249DE0049D754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			children = (
 				A05760E21F3BC39900E89DCA /* SignUpViewController.swift */,
 				A0C2A8AA1F324B810049D754 /* SignUp.storyboard */,
-				A05760DC1F3BC0A100E89DCA /* SignUpViewController.storyboard */,
 			);
 			name = SignUp;
 			sourceTree = "<group>";
@@ -245,7 +242,6 @@
 				A0C2A8BC1F3281C50049D754 /* MainViewController.storyboard in Resources */,
 				A0C2A8BE1F3282C90049D754 /* Chat.storyboard in Resources */,
 				A0C2A8A71F324B5E0049D754 /* Services.storyboard in Resources */,
-				A05760DD1F3BC0A100E89DCA /* SignUpViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
