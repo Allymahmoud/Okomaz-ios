@@ -32,8 +32,8 @@
                                     <constraint firstAttribute="width" constant="240" id="nnA-8B-1a0"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyo-6k-wnE">
-                                <rect key="frame" x="47" y="468" width="280" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyo-6k-wnE">
+                                <rect key="frame" x="47" y="510" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.96719652410000001" green="0.21025413270000001" blue="0.44906359909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ffe-PS-mie"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T0f-zj-DOP">
-                                <rect key="frame" x="47" y="288" width="280" height="40"/>
+                                <rect key="frame" x="47" y="343" width="280" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="xGm-YM-Vt1"/>
                                 </constraints>
@@ -55,22 +55,22 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ml-vm-RVg">
-                                <rect key="frame" x="47" y="336" width="280" height="40"/>
+                                <rect key="frame" x="47" y="391" width="280" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="YzW-wJ-mgN"/>
                                 </constraints>
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Verify Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPc-Oa-LvY">
-                                <rect key="frame" x="47" y="384" width="280" height="40"/>
+                                <rect key="frame" x="47" y="439" width="280" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bqX-ff-blF"/>
                                 </constraints>
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uj-lY-tel">
                                 <rect key="frame" x="47" y="240" width="280" height="40"/>
@@ -82,6 +82,15 @@
                                 <color key="textColor" red="0.99176219560000001" green="1" blue="0.96255367290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-U2-HRd">
+                                <rect key="frame" x="47" y="295" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rVO-mH-tL2"/>
+                                </constraints>
+                                <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -94,16 +103,19 @@
                             <constraint firstAttribute="trailingMargin" secondItem="9Uj-lY-tel" secondAttribute="trailing" constant="32" id="Bqr-vU-fk7"/>
                             <constraint firstItem="yyo-6k-wnE" firstAttribute="centerX" secondItem="4S3-j9-2oB" secondAttribute="centerX" id="CSZ-uU-Xdq"/>
                             <constraint firstItem="juu-BM-8lD" firstAttribute="bottom" secondItem="hHG-yQ-lOP" secondAttribute="top" id="FKR-zW-SzC"/>
-                            <constraint firstItem="yyo-6k-wnE" firstAttribute="top" secondItem="bPc-Oa-LvY" secondAttribute="bottom" constant="44" id="JGd-Ym-1vC"/>
                             <constraint firstItem="T0f-zj-DOP" firstAttribute="trailing" secondItem="9Uj-lY-tel" secondAttribute="trailing" id="KeV-5g-9VZ"/>
+                            <constraint firstItem="aCY-U2-HRd" firstAttribute="centerX" secondItem="juu-BM-8lD" secondAttribute="centerX" id="RHe-0I-Qjb"/>
                             <constraint firstItem="T0f-zj-DOP" firstAttribute="leading" secondItem="9Uj-lY-tel" secondAttribute="leading" id="Rb9-fk-1Pf"/>
                             <constraint firstItem="2ml-vm-RVg" firstAttribute="leading" secondItem="9Uj-lY-tel" secondAttribute="leading" id="VB0-bs-iEa"/>
                             <constraint firstItem="juu-BM-8lD" firstAttribute="centerX" secondItem="2ml-vm-RVg" secondAttribute="centerX" id="aVH-Nl-hCu"/>
+                            <constraint firstItem="aCY-U2-HRd" firstAttribute="trailing" secondItem="9Uj-lY-tel" secondAttribute="trailing" id="aeI-a8-log"/>
                             <constraint firstItem="9Uj-lY-tel" firstAttribute="centerX" secondItem="4S3-j9-2oB" secondAttribute="centerX" id="bIk-hm-U6n"/>
-                            <constraint firstItem="T0f-zj-DOP" firstAttribute="top" secondItem="9Uj-lY-tel" secondAttribute="bottom" constant="8" id="dT6-sf-IRr"/>
                             <constraint firstItem="yyo-6k-wnE" firstAttribute="trailing" secondItem="9Uj-lY-tel" secondAttribute="trailing" id="e6k-WW-b2i"/>
                             <constraint firstItem="juu-BM-8lD" firstAttribute="leading" secondItem="4S3-j9-2oB" secondAttribute="leading" id="eok-yM-djT"/>
+                            <constraint firstItem="T0f-zj-DOP" firstAttribute="top" secondItem="aCY-U2-HRd" secondAttribute="bottom" constant="8" id="gzB-Tj-dhS"/>
                             <constraint firstItem="bPc-Oa-LvY" firstAttribute="trailing" secondItem="9Uj-lY-tel" secondAttribute="trailing" id="nAb-jv-6Zi"/>
+                            <constraint firstItem="aCY-U2-HRd" firstAttribute="top" secondItem="9Uj-lY-tel" secondAttribute="bottom" constant="15" id="p5j-7g-p08"/>
+                            <constraint firstItem="aCY-U2-HRd" firstAttribute="leading" secondItem="9Uj-lY-tel" secondAttribute="leading" id="qHZ-eu-SPt"/>
                             <constraint firstItem="9Uj-lY-tel" firstAttribute="leading" secondItem="4S3-j9-2oB" secondAttribute="leadingMargin" constant="31" id="rtL-KV-ofr"/>
                             <constraint firstItem="Tha-by-L2a" firstAttribute="centerX" secondItem="4S3-j9-2oB" secondAttribute="centerX" id="sHZ-hV-hOl"/>
                             <constraint firstItem="juu-BM-8lD" firstAttribute="top" secondItem="4S3-j9-2oB" secondAttribute="top" id="tPb-TV-oRZ"/>
@@ -115,6 +127,7 @@
                     </view>
                     <connections>
                         <outlet property="email" destination="T0f-zj-DOP" id="KHp-eX-WYV"/>
+                        <outlet property="name" destination="aCY-U2-HRd" id="H8A-mu-iLQ"/>
                         <outlet property="password" destination="2ml-vm-RVg" id="2q6-u4-T2V"/>
                         <outlet property="signUpOption" destination="9Uj-lY-tel" id="Bc4-f8-QJd"/>
                         <outlet property="verifyPassword" destination="bPc-Oa-LvY" id="WmF-aR-WfL"/>
