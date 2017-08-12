@@ -25,7 +25,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="allybg" translatesAutoresizingMaskIntoConstraints="NO" id="ysB-fW-AT4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hxe-ob-HCV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hxe-ob-HCV">
                                 <rect key="frame" x="47" y="357" width="280" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="2sX-bd-gfK"/>
@@ -158,8 +158,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ddg-8m-xYe"/>
                     <connections>
-                        <outlet property="emailField" destination="Hxe-ob-HCV" id="ElQ-wt-2Ck"/>
                         <outlet property="passwordField" destination="vZZ-5y-s1t" id="8rZ-5v-ql4"/>
+                        <outlet property="phone" destination="Hxe-ob-HCV" id="4SF-Ug-VYv"/>
                         <segue destination="8Fk-e3-qGt" kind="show" identifier="navToRegisterOptions" id="Oxg-ch-bR2"/>
                         <segue destination="gKL-AT-4Gg" kind="show" identifier="navToMain" id="w9a-hN-egr"/>
                     </connections>

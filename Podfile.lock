@@ -53,6 +53,12 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - Realm (2.9.0):
+    - Realm/Headers (= 2.9.0)
+  - Realm/Headers (2.9.0)
+  - RealmSwift (2.9.0):
+    - Realm (= 2.9.0)
+  - SinchVerification-Swift (2.0.4)
 
 DEPENDENCIES:
   - BarcodeScanner
@@ -62,6 +68,8 @@ DEPENDENCIES:
   - Firebase/Storage
   - Gloss (~> 1.2)
   - JSQMessagesViewController
+  - RealmSwift
+  - SinchVerification-Swift
 
 SPEC CHECKSUMS:
   BarcodeScanner: 02a879e49cbda516158ee0bcf7ce9665b4aa26b9
@@ -78,7 +86,10 @@ SPEC CHECKSUMS:
   JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Realm: f14ab1673502559cb16592ddb8f383c474c13e05
+  RealmSwift: 16ad2c187042c4934f49750375582fe508627dcb
+  SinchVerification-Swift: e74bb3c09c3e02e6711d1e962ac56ae0239dabe0
 
-PODFILE CHECKSUM: 9b6be1201d9552cd6ccbb803dc54a9ba9b60043b
+PODFILE CHECKSUM: d0796279f56e76d3166be6b48541de395ef0ff7f
 
 COCOAPODS: 1.2.1

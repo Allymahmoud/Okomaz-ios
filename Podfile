@@ -20,4 +20,7 @@ target 'Okomaz-ios' do
   # pod for barcodescanner
   pod 'BarcodeScanner'
 
+  #pod for phone verification
+  pod 'SinchVerification-Swift'
+
 end

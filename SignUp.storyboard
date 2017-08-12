@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="width" constant="240" id="nnA-8B-1a0"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyo-6k-wnE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyo-6k-wnE">
                                 <rect key="frame" x="47" y="510" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.96719652410000001" green="0.21025413270000001" blue="0.44906359909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -45,7 +45,7 @@
                                     <action selector="signUp:" destination="Iao-k3-VCb" eventType="touchUpInside" id="roa-Hj-s4U"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T0f-zj-DOP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Phone " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T0f-zj-DOP">
                                 <rect key="frame" x="47" y="343" width="280" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="xGm-YM-Vt1"/>
@@ -121,21 +121,90 @@
                             <constraint firstItem="juu-BM-8lD" firstAttribute="top" secondItem="4S3-j9-2oB" secondAttribute="top" id="tPb-TV-oRZ"/>
                             <constraint firstItem="bPc-Oa-LvY" firstAttribute="leading" secondItem="9Uj-lY-tel" secondAttribute="leading" id="ueQ-pt-Ojt"/>
                             <constraint firstItem="Tha-by-L2a" firstAttribute="top" secondItem="S4A-Sl-Zs1" secondAttribute="bottom" constant="43" id="vbG-Ll-mZz"/>
+                            <constraint firstItem="yyo-6k-wnE" firstAttribute="top" secondItem="bPc-Oa-LvY" secondAttribute="bottom" constant="31" id="wrw-VX-72B"/>
                             <constraint firstItem="2ml-vm-RVg" firstAttribute="trailing" secondItem="9Uj-lY-tel" secondAttribute="trailing" id="yDx-H1-ZS4"/>
                             <constraint firstItem="bPc-Oa-LvY" firstAttribute="centerX" secondItem="4S3-j9-2oB" secondAttribute="centerX" id="zxe-mg-NfP"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="email" destination="T0f-zj-DOP" id="KHp-eX-WYV"/>
                         <outlet property="name" destination="aCY-U2-HRd" id="H8A-mu-iLQ"/>
                         <outlet property="password" destination="2ml-vm-RVg" id="2q6-u4-T2V"/>
+                        <outlet property="phone" destination="T0f-zj-DOP" id="KaL-Fv-o4S"/>
                         <outlet property="signUpOption" destination="9Uj-lY-tel" id="Bc4-f8-QJd"/>
                         <outlet property="verifyPassword" destination="bPc-Oa-LvY" id="WmF-aR-WfL"/>
+                        <segue destination="fga-UF-NcT" kind="show" identifier="navToCodeVerification" id="615-oh-mtD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cex-GW-7HV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-39.200000000000003" y="66.11694152923539"/>
+        </scene>
+        <!--Verify Code View Controller-->
+        <scene sceneID="wcH-1l-SDN">
+            <objects>
+                <viewController id="fga-UF-NcT" customClass="VerifyCodeViewController" customModule="Okomaz_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="viJ-SF-iqd"/>
+                        <viewControllerLayoutGuide type="bottom" id="VXP-i7-fre"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ML4-xD-tBo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="allybg" translatesAutoresizingMaskIntoConstraints="NO" id="SYk-e7-QHz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hvb-uL-x92">
+                                <rect key="frame" x="47" y="313" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="H82-bb-Hx3"/>
+                                    <constraint firstAttribute="height" constant="40" id="v4W-Nr-fby"/>
+                                </constraints>
+                                <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuy-u0-GJT">
+                                <rect key="frame" x="47" y="381" width="280" height="40"/>
+                                <color key="backgroundColor" red="0.96719652410000001" green="0.21025413270000001" blue="0.44906359909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="e7n-z1-bcg"/>
+                                    <constraint firstAttribute="width" constant="280" id="pUf-qE-AN9"/>
+                                </constraints>
+                                <state key="normal" title="VERIFY CODE">
+                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUp:" destination="Iao-k3-VCb" eventType="touchUpInside" id="IlG-B0-bvB"/>
+                                    <action selector="verifyCode:" destination="fga-UF-NcT" eventType="touchUpInside" id="jgz-mA-wbP"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Kcu-cR-37Q">
+                                <rect key="frame" x="169" y="346" width="37" height="37"/>
+                                <color key="color" red="0.66297435760000001" green="0.78426873679999998" blue="0.8139659762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Kcu-cR-37Q" firstAttribute="centerX" secondItem="SYk-e7-QHz" secondAttribute="centerX" id="9Vc-YB-1O0"/>
+                            <constraint firstItem="Hvb-uL-x92" firstAttribute="centerX" secondItem="ML4-xD-tBo" secondAttribute="centerX" id="Lx7-vh-LGa"/>
+                            <constraint firstItem="SYk-e7-QHz" firstAttribute="centerX" secondItem="Cuy-u0-GJT" secondAttribute="centerX" id="M74-rx-wTM"/>
+                            <constraint firstItem="SYk-e7-QHz" firstAttribute="centerY" secondItem="Hvb-uL-x92" secondAttribute="centerY" id="MgH-hd-oE1"/>
+                            <constraint firstItem="SYk-e7-QHz" firstAttribute="leading" secondItem="ML4-xD-tBo" secondAttribute="leading" id="TcE-r0-0zZ"/>
+                            <constraint firstItem="Cuy-u0-GJT" firstAttribute="top" secondItem="Hvb-uL-x92" secondAttribute="bottom" constant="28" id="clI-EI-xEh"/>
+                            <constraint firstItem="SYk-e7-QHz" firstAttribute="bottom" secondItem="VXP-i7-fre" secondAttribute="top" id="igs-Tz-yyO"/>
+                            <constraint firstItem="Cuy-u0-GJT" firstAttribute="leading" secondItem="Hvb-uL-x92" secondAttribute="leading" id="iwh-CP-Xdm"/>
+                            <constraint firstItem="Hvb-uL-x92" firstAttribute="centerY" secondItem="ML4-xD-tBo" secondAttribute="centerY" id="nAy-RU-3GU"/>
+                            <constraint firstItem="Cuy-u0-GJT" firstAttribute="top" secondItem="Kcu-cR-37Q" secondAttribute="bottom" constant="-2" id="tsV-SU-GwQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="code" destination="Hvb-uL-x92" id="tT1-26-s7B"/>
+                        <outlet property="loadingIndicator" destination="Kcu-cR-37Q" id="tVE-1B-ZgU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHt-Wq-ftD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="66"/>
         </scene>
     </scenes>
     <resources>
