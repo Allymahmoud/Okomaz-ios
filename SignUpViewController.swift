@@ -9,7 +9,7 @@
 import UIKit
 import SinchVerification
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var signUpOption: UILabel!
@@ -76,6 +76,20 @@ class SignUpViewController: UIViewController {
         phoneVC.clientInfo.name = self.clientInfo.name
         phoneVC.clientInfo.phoneNumber = self.clientInfo.phoneNumber
         phoneVC.clientInfo.password = self.clientInfo.password
+    }
+    
+    //function to dismiss the keyboard when done editing
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.phone.resignFirstResponder()
+        return true
+    }
+    
+    
+    
+    //function to dissmiss the keyboard when a part of the screen is touched
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // TODO: Rather use the IQ Keyboard component
+        self.view.endEditing(true)
     }
     
     

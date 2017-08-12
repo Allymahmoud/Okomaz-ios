@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="6fF-rj-U2z">
             <objects>
-                <viewController id="Fjj-kn-e6H" sceneMemberID="viewController">
+                <viewController id="Fjj-kn-e6H" customClass="SettingsViewController" customModule="Okomaz_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q4o-ir-4ad"/>
                         <viewControllerLayoutGuide type="bottom" id="sSa-zd-dll"/>
@@ -20,12 +20,25 @@
                     <view key="view" contentMode="scaleToFill" id="ByG-1s-Ior">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXd-a6-FuF">
+                                <rect key="frame" x="163.5" y="318" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="Fjj-kn-e6H" eventType="touchUpInside" id="Sap-LV-gdk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cXd-a6-FuF" firstAttribute="centerX" secondItem="ByG-1s-Ior" secondAttribute="centerX" id="1oV-Ka-HdS"/>
+                            <constraint firstItem="cXd-a6-FuF" firstAttribute="centerY" secondItem="ByG-1s-Ior" secondAttribute="centerY" id="CWX-SZ-LML"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfF-wo-TTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="44"/>
+            <point key="canvasLocation" x="20" y="43.628185907046479"/>
         </scene>
     </scenes>
 </document>

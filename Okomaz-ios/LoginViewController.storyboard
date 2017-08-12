@@ -123,6 +123,10 @@
                                 </constraints>
                                 <state key="normal" image="google"/>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Y0U-Sp-GU5">
+                                <rect key="frame" x="169" y="427" width="37" height="37"/>
+                                <color key="color" red="0.96719652410000001" green="0.21025413270000001" blue="0.44906359909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ysB-fW-AT4" secondAttribute="trailing" id="41I-jj-mMf"/>
@@ -144,6 +148,7 @@
                             <constraint firstItem="1L2-Tn-WLL" firstAttribute="leading" secondItem="x2X-l1-g6u" secondAttribute="leading" id="UOQ-Yx-zZF"/>
                             <constraint firstItem="gLG-nQ-fR1" firstAttribute="leading" secondItem="j6w-UO-mKP" secondAttribute="trailing" constant="43" id="XOS-8m-hls"/>
                             <constraint firstItem="vZZ-5y-s1t" firstAttribute="top" secondItem="Hxe-ob-HCV" secondAttribute="bottom" constant="8" symbolic="YES" id="cch-Wr-f0A"/>
+                            <constraint firstItem="y4P-l0-rea" firstAttribute="top" secondItem="Y0U-Sp-GU5" secondAttribute="bottom" constant="8" id="gfU-f4-Fb5"/>
                             <constraint firstItem="fgb-ox-DdJ" firstAttribute="centerX" secondItem="ysB-fW-AT4" secondAttribute="centerX" id="ggY-Ex-EWO"/>
                             <constraint firstItem="1L2-Tn-WLL" firstAttribute="centerX" secondItem="j6w-UO-mKP" secondAttribute="centerX" id="gqN-Sp-ZUF"/>
                             <constraint firstItem="j6w-UO-mKP" firstAttribute="top" secondItem="gLG-nQ-fR1" secondAttribute="top" id="his-qx-7fT"/>
@@ -154,10 +159,12 @@
                             <constraint firstItem="ysB-fW-AT4" firstAttribute="leading" secondItem="Ost-fV-ITn" secondAttribute="leading" id="uHr-2G-JgW"/>
                             <constraint firstItem="j6w-UO-mKP" firstAttribute="leading" secondItem="vyL-pP-pZC" secondAttribute="trailing" constant="47" id="vko-NU-efs"/>
                             <constraint firstItem="Hxe-ob-HCV" firstAttribute="trailing" secondItem="vZZ-5y-s1t" secondAttribute="trailing" id="yL0-7Q-Fak"/>
+                            <constraint firstItem="Y0U-Sp-GU5" firstAttribute="centerX" secondItem="ysB-fW-AT4" secondAttribute="centerX" id="yxb-eP-TVE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ddg-8m-xYe"/>
                     <connections>
+                        <outlet property="loadingIndicator" destination="Y0U-Sp-GU5" id="JqA-gn-Djh"/>
                         <outlet property="passwordField" destination="vZZ-5y-s1t" id="8rZ-5v-ql4"/>
                         <outlet property="phone" destination="Hxe-ob-HCV" id="4SF-Ug-VYv"/>
                         <segue destination="8Fk-e3-qGt" kind="show" identifier="navToRegisterOptions" id="Oxg-ch-bR2"/>

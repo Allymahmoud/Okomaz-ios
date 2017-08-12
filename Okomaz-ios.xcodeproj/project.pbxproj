@@ -12,6 +12,12 @@
 		A03C44E01F3CE610007A38A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A03C44DF1F3CE610007A38A6 /* GoogleService-Info.plist */; };
 		A03C44E31F3CF930007A38A6 /* Alertutil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03C44E21F3CF930007A38A6 /* Alertutil.swift */; };
 		A05760E31F3BC39900E89DCA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05760E21F3BC39900E89DCA /* SignUpViewController.swift */; };
+		A087C7561F3F10F800D6E506 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087C7551F3F10F800D6E506 /* LoginService.swift */; };
+		A087C7581F3F115B00D6E506 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087C7571F3F115B00D6E506 /* LoginRequest.swift */; };
+		A087C75A1F3F11F500D6E506 /* LoginServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087C7591F3F11F500D6E506 /* LoginServiceDelegate.swift */; };
+		A087C75C1F3F141700D6E506 /* AccessTokenServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087C75B1F3F141700D6E506 /* AccessTokenServiceDelegate.swift */; };
+		A087C7601F3F149400D6E506 /* AccessTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087C75F1F3F149400D6E506 /* AccessTokenService.swift */; };
+		A087C7621F3F27AC00D6E506 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087C7611F3F27AC00D6E506 /* SettingsViewController.swift */; };
 		A0C2A88D1F3249DE0049D754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A88C1F3249DE0049D754 /* AppDelegate.swift */; };
 		A0C2A88F1F3249DE0049D754 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2A88E1F3249DE0049D754 /* AuthenticationViewController.swift */; };
 		A0C2A8921F3249DE0049D754 /* AuthenticationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2A8901F3249DE0049D754 /* AuthenticationViewController.storyboard */; };
@@ -41,6 +47,12 @@
 		A03C44DF1F3CE610007A38A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A03C44E21F3CF930007A38A6 /* Alertutil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alertutil.swift; sourceTree = "<group>"; };
 		A05760E21F3BC39900E89DCA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A087C7551F3F10F800D6E506 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		A087C7571F3F115B00D6E506 /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		A087C7591F3F11F500D6E506 /* LoginServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceDelegate.swift; sourceTree = "<group>"; };
+		A087C75B1F3F141700D6E506 /* AccessTokenServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenServiceDelegate.swift; sourceTree = "<group>"; };
+		A087C75F1F3F149400D6E506 /* AccessTokenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenService.swift; sourceTree = "<group>"; };
+		A087C7611F3F27AC00D6E506 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A0C2A8891F3249DE0049D754 /* Okomaz-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Okomaz-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2A88C1F3249DE0049D754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C2A88E1F3249DE0049D754 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationViewController.swift; path = "Okomaz-ios/AuthenticationViewController.swift"; sourceTree = "<group>"; };
@@ -96,6 +108,25 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		A087C75D1F3F144700D6E506 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A087C7551F3F10F800D6E506 /* LoginService.swift */,
+				A087C7571F3F115B00D6E506 /* LoginRequest.swift */,
+				A087C7591F3F11F500D6E506 /* LoginServiceDelegate.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		A087C75E1F3F144E00D6E506 /* AccessToken */ = {
+			isa = PBXGroup;
+			children = (
+				A087C75B1F3F141700D6E506 /* AccessTokenServiceDelegate.swift */,
+				A087C75F1F3F149400D6E506 /* AccessTokenService.swift */,
+			);
+			name = AccessToken;
+			sourceTree = "<group>";
+		};
 		A0C2A8801F3249DE0049D754 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +174,8 @@
 		A0C2A89E1F324A230049D754 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A087C75E1F3F144E00D6E506 /* AccessToken */,
+				A087C75D1F3F144700D6E506 /* API */,
 				A0C2A8AC1F324B930049D754 /* LoginViewController.storyboard */,
 				A0C2A8B81F327CB10049D754 /* SignUpOptionsViewController.swift */,
 				A0C2A8B01F3251890049D754 /* LoginViewController.swift */,
@@ -164,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				A0C2A8A81F324B6E0049D754 /* Settings.storyboard */,
+				A087C7611F3F27AC00D6E506 /* SettingsViewController.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -384,14 +418,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A087C75C1F3F141700D6E506 /* AccessTokenServiceDelegate.swift in Sources */,
+				A087C7601F3F149400D6E506 /* AccessTokenService.swift in Sources */,
 				A0F79BE41F3E37AB00FC0A5C /* ClientsRouter.swift in Sources */,
 				A03C44E31F3CF930007A38A6 /* Alertutil.swift in Sources */,
 				A0F79BE81F3E431700FC0A5C /* ClientDTO.swift in Sources */,
+				A087C7621F3F27AC00D6E506 /* SettingsViewController.swift in Sources */,
+				A087C7581F3F115B00D6E506 /* LoginRequest.swift in Sources */,
 				A05760E31F3BC39900E89DCA /* SignUpViewController.swift in Sources */,
 				A0C2A8C01F32860F0049D754 /* MainViewController.swift in Sources */,
+				A087C7561F3F10F800D6E506 /* LoginService.swift in Sources */,
 				A03C44DC1F3C707B007A38A6 /* UneededViewController.swift in Sources */,
 				A0F79BEA1F3E486700FC0A5C /* Client.swift in Sources */,
 				A0F79BE01F3E2CC200FC0A5C /* VerifyCodeViewController.swift in Sources */,
+				A087C75A1F3F11F500D6E506 /* LoginServiceDelegate.swift in Sources */,
 				A0F79BE21F3E314300FC0A5C /* Constants.swift in Sources */,
 				A0C2A8B11F3251890049D754 /* LoginViewController.swift in Sources */,
 				A0C2A88F1F3249DE0049D754 /* AuthenticationViewController.swift in Sources */,

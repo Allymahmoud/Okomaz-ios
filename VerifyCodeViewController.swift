@@ -11,7 +11,7 @@ import SinchVerification
 import FirebaseDatabase
 
 
-class VerifyCodeViewController: UIViewController {
+class VerifyCodeViewController: UIViewController, UITextFieldDelegate{
     
     
     @IBOutlet weak var code: UITextField!
@@ -95,6 +95,20 @@ class VerifyCodeViewController: UIViewController {
         let loginViewController = LoginViewController.storyboardInstance()
         self.present(loginViewController, animated: true, completion: nil)
         
+    }
+    
+    //function to dismiss the keyboard when done editing
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.code.resignFirstResponder()
+        return true
+    }
+    
+    
+    
+    //function to dissmiss the keyboard when a part of the screen is touched
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // TODO: Rather use the IQ Keyboard component
+        self.view.endEditing(true)
     }
 
    
