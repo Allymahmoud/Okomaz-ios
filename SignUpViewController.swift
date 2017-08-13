@@ -15,13 +15,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var signUpOption: UILabel!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var verifyPassword: UITextField!
-    var verification: Verification!
-    
-     var clientInfo: Client!
-    
     @IBOutlet weak var phone: UITextField!
     
+    var verification: Verification!
+    var clientInfo: Client!
     var selectedOption: String?
+    var dialCode: String!
+    var countryName: String!
     
     
 
@@ -51,7 +51,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             verification = SMSVerification(Constants.API.SinchApplicationKey,phoneNumber: phone.text!)
             verification.initiate { (result:InitiationResult, error:Error?) -> Void in
                 if (result.success){
-                    self.clientInfo = Client(name: self.name.text!, phoneNumber: self.phone.text!, password: self.password.text!, role: self.signUpOption.text!)
+                    
+                    
                     
                     self.performSegue(withIdentifier: "navToCodeVerification", sender: sender)
                     
@@ -64,10 +65,16 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         }
         
     }
+    func configureClientInfo(){
+        self.clientInfo = Client(name: self.name.text!, phoneNumber: self.phone.text!, password: self.password.text!, role: self.signUpOption.text!)
+        self.clientInfo.country = countryName
+    }
     
     func configureUI(){
         if (selectedOption != nil) {
             signUpOption.text = selectedOption
+            phone.text = dialCode
+            
             
         }
     }
